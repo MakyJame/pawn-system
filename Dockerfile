@@ -3,7 +3,7 @@ FROM python:3.10
 WORKDIR /app
 
 # system deps
-RUN apt update && apt install -y iputils-ping vim nano && rm -rf /var/lib/apt/lists/*
+RUN apt update && apt install -y iputils-ping vim nano curl net-tools && rm -rf /var/lib/apt/lists/*
 
 # python deps
 COPY requirements.txt .
