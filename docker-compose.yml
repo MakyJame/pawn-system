@@ -21,7 +21,7 @@ services:
     ports: 
       - "8080:8000"
     environment:
-      DATABASE_URL: postgresql://admin:123456admin@db:5432/pawn_db
+      DATABASE_URL: ${DATABASE_URL}
 
 volumes:
   postgres_data:
